@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | K S Sooraj</title>
+    <style>
+        :root {
+            --bg-color: #f9f5f0; 
+            --text-color: #3d2b1f; 
+            --accent-color: #8b6f47; 
+            --hover-color: #d4b896; 
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://thumbs.dreamstime.com/b/vintage-writer-desk-typewriter-open-notebook-coffee-cup-cozy-home-office-creative-workspace-author-journalist-397453651.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+
+        header:hover {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://thumbs.dreamstime.com/b/vintage-writer-desk-typewriter-open-notebook-coffee-cup-cozy-home-office-creative-workspace-author-journalist-397453651.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(249, 245, 240, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 1rem 0 2rem;
+            color: var(--text-color);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(249, 245, 240, 0.95);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 100;
+            transition: background 0.3s ease;
+        }
+
+        nav:hover {
+            background: var(--hover-color);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            text-align: left;
+            margin-top: 0;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin: 1.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info li strong {
+            color: var(--accent-color);
+            min-width: 120px;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        form {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        form label {
+            display: block;
+            margin: 1rem 0 0.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--accent-color);
+            border-radius: 8px;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Georgia', serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            outline: none;
+            border-color: var(--hover-color);
+        }
+
+        form button {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: var(--text-color);
+        }
+
+        footer {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="projects.html">Projects</a>
+        <a href="https://soorajuxui.wordpress.com/" target="_blank">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <h2>Let's write the next design chapter together</h2>
+            <p>I'm always open to new design challenges and collaborations. Don't hesitate to reach out!</p>
+        </div>
+    </header>
+
+    <section class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Details</h2>
+            <ul>
+                <li><strong>Name:</strong> K S Sooraj</li>
+                <li><strong>Email:</strong> soorajdheeraj28@outlook.com</li>
+                <li><strong>Phone:</strong> +91 9717011037</li>
+                <li><strong>Location:</strong> New Delhi, India</li>
+            </ul>
+
+            <div class="social-links">
+                <p><strong>Connect with me:</strong></p>
+                <a href="https://www.linkedin.com/in/k-s-sooraj-39aa17249/" target="_blank">LinkedIn</a>
+                <a href="https://www.behance.net/kssooraj1" target="_blank">Behance</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
+        <p>Images sourced from royalty-free stock providers.</p>
+    </footer>
+
+</body>
+</html>
