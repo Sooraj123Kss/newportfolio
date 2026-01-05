@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | K S Sooraj</title>
+    <style>
+        :root {
+            --bg-color: #f9f5f0; /* Warm parchment-like background */
+            --text-color: #3d2b1f; /* Deep brown for readability like book text */
+            --accent-color: #8b6f47; /* Antique gold for highlights */
+            --hover-color: #d4b896; /* Lighter warm tone for hover */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://thumbs.dreamstime.com/b/open-book-glowing-pages-symbolizing-imagination-creativity-knowledge-perfect-educational-literary-magical-403675790.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+
+        header:hover {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://thumbs.dreamstime.com/b/open-book-glowing-pages-symbolizing-imagination-creativity-knowledge-perfect-educational-literary-magical-403675790.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(249, 245, 240, 0.85);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 1rem 0 2rem;
+            color: var(--text-color);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(249, 245, 240, 0.95);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 100;
+            transition: background 0.3s ease;
+        }
+
+        nav:hover {
+            background: var(--hover-color);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: opacity 0.4s ease;
+        }
+
+        .project-card:hover img {
+            opacity: 0.9;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .project-info h3 {
+            margin: 0 0 1rem;
+            font-size: 1.6rem;
+            color: var(--accent-color);
+        }
+
+        .project-info p {
+            margin: 0 0 1.5rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: var(--text-color);
+        }
+
+        footer {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="#">Projects</a>
+        <a href="https://soorajuxui.wordpress.com/" target="_blank">Blog</a> 
+        <a href="contact.html">Contact</a> 
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>My Projects</h1>
+            <h2>Each design is a story waiting to be explored</h2>
+            <p>Like chapters in a book, these projects showcase thoughtful covers and immersive experiences.</p>
+        </div>
+    </header>
+
+    <section class="projects-grid">
+        <div class="project-card">
+            <img src="images/minimalbranding.png" alt="minimalbranding">
+            <div class="project-info">
+                <h3>Minimal Branding</h3>
+                <p>A minimalist approach to brand identity from a Ui perspective.</p>
+                <a href="https://www.behance.net/gallery/236061255/FitTea-Tea-that-work-as-much-as-you-do" class="project-link">View Case Study →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/skart.png" alt="projectcasestudy">
+            <div class="project-info">
+                <h3>Interactive E-Commerce App</h3>
+                <p>Crafting an engaging "cover" with bold visuals and deep, intuitive navigation that keeps users turning the pages.</p>
+                <a href="https://sooraj123kss.github.io/soorajweb/ecom.html" class="project-link">View Case Study →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/wordpress.png" alt="Minimal wordpress Design">
+            <div class="project-info">
+                <h3>Minimal wordpress design</h3>
+                <p>A wordpress project inspired by classic books — simplicity on the outside, rich storytelling within.</p>
+                <a href="https://soorajuxui.wordpress.com/" class="project-link">View Case Study →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/Premia.png" alt="Mobile App UI Design Examples">
+            <div class="project-info">
+                <h3>Dashboard Experience</h3>
+                <p>An app dedicated to readers and writers.</p>
+                <a href="https://www.behance.net/gallery/221714177/Premia-luxury-pens-and-watches-case-study" class="project-link">View Case Study →</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/apk.jpg" alt="Apps JS Project">
+            <div class="project-info">
+                <h3>Apps JS</h3>
+                <p>A JavaScript-based application project showcasing interactive and dynamic user experiences.</p>
+                <a href="https://sooraj123kss.github.io/Javascriptmine/apps.html" class="project-link">View Case Study →</a>
+            </div>
+        </div>
+    </footer>
+        <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
+        <p>Images sourced from public design resources</p>
+    </footer>
+
+    <script>
+        // Minimal JS for smooth scroll if needed (optional here)
+    </script>
+</body>
+</html>
