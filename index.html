@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K S Sooraj | UI/UX Designer</title>
+    <style>
+        :root {
+            --bg-color: #f9f5f0; /* Warm parchment-like background */
+            --text-color: #3d2b1f; /* Deep brown for readability like book text */
+            --accent-color: #8b6f47; /* Antique gold for highlights */
+            --hover-color: #d4b896; /* Lighter warm tone for hover */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif; /* Elegant, book-like typography */
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://thumbs.dreamstime.com/b/open-book-rests-wooden-table-illuminated-soft-warm-light-open-book-wooden-table-bokeh-background-406419540.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: background 0.5s ease;
+        }
+
+        header:hover {
+            background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://thumbs.dreamstime.com/b/open-book-rests-wooden-table-illuminated-soft-warm-light-open-book-wooden-table-bokeh-background-406419540.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            background: rgba(249, 245, 240, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0 2rem;
+            color: var(--text-color);
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(249, 245, 240, 0.95);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            z-index: 100;
+            transition: background 0.3s ease;
+        }
+
+        nav:hover {
+            background: var(--hover-color);
+        }
+
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .about {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 4rem;
+            align-items: center;
+            text-align: left;
+        }
+
+ 
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-pic {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            background-color: #efe9e2; 
+        }
+
+        .profile-pic:hover {
+            transform: scale(1.03);
+            box-shadow: 0 20px 48px rgba(0,0,0,0.22);
+        }
+
+       
+        .about img:not(.profile-pic) {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .about img:not(.profile-pic):hover {
+            transform: scale(1.05);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        .gallery img:hover {
+            transform: translateY(-10px);
+            opacity: 0.9;
+        }
+
+        footer {
+            background: var(--accent-color);
+            color: var(--bg-color);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="Projects.html">Projects</a>
+        <a href="https://soorajuxui.wordpress.com/" target="_blank">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <div class="hero-content">
+            <h1>K S Sooraj</h1>
+            <h2>UI/UX Designer</h2>
+            <p>I treat every design like a book — crafting beautiful covers that invite clicks, and rich pages that keep users reading.</p>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div>
+            <h2>About Me</h2>
+            <p>Hello! I'm K S Sooraj, a passionate UI/UX designer who approaches every project like crafting a book. Just as a great book captivates with its cover and holds attention through its thoughtful content, I believe exceptional digital experiences start with stunning, intuitive visuals (the "cover") and are sustained by seamless, meaningful interactions (the "pages").</p>
+            <p>I pay equal attention to aesthetics and functionality — ensuring designs are not only beautiful but also user-centered, accessible, and delightful to explore. Inspired by typography, layout, and storytelling in literature, I bring that same depth and care to interfaces.</p>
+            <p>When I'm not designing, you'll find me lost in a good book or sketching new ideas.</p>
+        </div>
+        <div class="profile">
+           
+            <img src="images/profile photo.png" alt="Profile picture placeholder" class="profile-pic">
+        </div>
+    </section>
+
+    <section id="portfolio" class="gallery">
+        <h2>Inspiration Gallery</h2>
+        <p>A few visuals that represent my design philosophy — books as metaphors for thoughtful experiences.</p>
+        <img src="https://images.stockcake.com/public/f/e/e/feed34f0-8314-4211-814e-02bd398110dd_large/cozy-reading-nook-stockcake.jpg" alt="Cozy reading nook with open book">
+        <img src="https://thumbs.dreamstime.com/b/relaxing-coffee-books-knitwear-creating-cozy-atmosphere-reading-warm-cup-sits-near-stack-eyeglasses-evoking-388780948.jpg" alt="Stack of books with coffee, cozy atmosphere">
+        <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/176120076/original/69c3e6f6050cf8b8296c1bfb975ad4064c3b3223/design-a-unique-beautiful-elegant-premium-minimal-decent-horror-art-book-covers.jpg" alt="Elegant minimal book cover design">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 K S Sooraj. All rights reserved.</p>
+        <p>Images sourced from Unsplash equivalents (Stock providers).</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
